@@ -1,0 +1,4 @@
+In this project, we will take the UDWS of Guangming district as an example. 
+Taking the code of Guangming District (i.e., folder of GM) as an example, the framework of the Matlab codes was composed by the following steps:
+Step 1: Data sampling based on the document of sampling.m and annual historical data on water demand and GDP in the document of gmw.xlsx. A document (i.e., gm.xlsx) can be established after run the document of sampling.m.
+Step 2: Historical data analysis based on the document of datacollect.m and gm.xlsx. A document (i.e., gmcollect1.xlsx) can be established after run the document of datacollect.m, with column A is the volume of annual "water volume" and column B is the volume of "GDP" from 2020-2030;The prediction of water demand in 2025 and 2030 of Guangming district was finished.
