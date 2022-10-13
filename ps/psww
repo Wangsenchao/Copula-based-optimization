@@ -1,0 +1,46 @@
+================================================================================ 
+MARGINAL DISTRIBUTIONS 
+================================================================================ 
+Evaluate dependence between the two input variables 
+
+      Correlation type        Correlation Coefficient              p value             Significant at 5%?
+          Kendall rank                         0.1636               0.5423                             No 
+ Spearman's rank-order                         0.2545               0.4512                             No 
+Pearson product-moment                         0.4376               0.1783                             No 
+                                                                       
+
+Evaluate fit of marginal distributions to variables 
+
+                      Fitted distribution           Par 1 name          Par 1 value           Par 2 name          Par 2 value           Par 3 name          Par 3 value           Par 4 name          Par 4 value    Chi square gof test that data is drawn from dist at 5% significance
+Variable 1      generalized extreme value                    k              -1.0722                sigma             292.0798                   mu            1653.4594                  NaN                  NaN        Accepted
+Variable 2                       nakagami                   mu               1.9628                omega  28670618084535.7270                  NaN                  NaN                  NaN                  NaN        Accepted
+                                                                       
+
+================================================================================ 
+COPULA JOINT PROBABILITY DISTRIBUTIONS 
+================================================================================ 
+Sort copulas based on different criteria 
+
+Rank       Max-Likelihood                  AIC                  BIC 
+   1                    t              Clayton              Clayton 
+   2              Clayton             Gaussian             Gaussian 
+   3             Gaussian               Gumbel               Gumbel 
+   4               Gumbel                Frank                Frank 
+   5                Frank                    t                    t 
+
+ 
+Estimated copula parameters 
+
+      Copula Name      RMSE       NSE          Par#1-Local  Par#2-Local  Par#3-Local           Par#1-MCMC         95%-Par#1-Unc-Range   Par#2-MCMC         95%-Par#2-Unc-Range   Par#3-MCMC         95%-Par#3-Unc-Range
+         Gaussian    0.2156    0.8661              -0.1078          NaN          NaN               0.3180         [ -0.1457   0.7133]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+                t    0.2117    0.8709              -0.0178 937957562.9832          NaN               0.3083         [ -0.1238   0.7603]       1.3060         [  1.1369  34.3646]          NaN         [     NaN      NaN] 
+          Clayton    0.2117    0.8708               0.9018          NaN          NaN               0.5634         [  0.0931  26.9218]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+            Frank    0.2211    0.8592               1.2704          NaN          NaN               1.6139         [ -0.9501  28.7501]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+           Gumbel    0.2166    0.8648               1.0000          NaN          NaN               1.2385         [  1.0001  31.7343]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+
+ 
+WARNING(s) 
+Second parameter of t copula is degree of freedom 
+Estimated degree of freedom for t copula is >25. You may consider switching to Gaussian copula in this case. 
+One (of the) parameter(s) of           Clayton copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of            Gumbel copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 

@@ -1,0 +1,47 @@
+================================================================================ 
+MARGINAL DISTRIBUTIONS 
+================================================================================ 
+Evaluate dependence between the two input variables 
+
+      Correlation type        Correlation Coefficient              p value             Significant at 5%?
+          Kendall rank                         0.8909               0.0000                            Yes 
+ Spearman's rank-order                         0.9727               0.0000                            Yes 
+Pearson product-moment                         0.9502               0.0000                            Yes 
+                                                                       
+
+Evaluate fit of marginal distributions to variables 
+
+                      Fitted distribution           Par 1 name          Par 1 value           Par 2 name          Par 2 value           Par 3 name          Par 3 value           Par 4 name          Par 4 value    Chi square gof test that data is drawn from dist at 5% significance
+Variable 1               inverse gaussian                   mu            2811.2591               lambda          171081.4679                  NaN                  NaN                  NaN                  NaN        Accepted
+Variable 2                        weibull                    A         7827530.7021                    B               3.2018                  NaN                  NaN                  NaN                  NaN        Accepted
+                                                                       
+
+================================================================================ 
+COPULA JOINT PROBABILITY DISTRIBUTIONS 
+================================================================================ 
+Sort copulas based on different criteria 
+
+Rank       Max-Likelihood                  AIC                  BIC 
+   1              Clayton              Clayton              Clayton 
+   2                    t             Gaussian             Gaussian 
+   3             Gaussian               Gumbel               Gumbel 
+   4               Gumbel                Frank                Frank 
+   5                Frank                    t                    t 
+
+ 
+Estimated copula parameters 
+
+      Copula Name      RMSE       NSE          Par#1-Local  Par#2-Local  Par#3-Local           Par#1-MCMC         95%-Par#1-Unc-Range   Par#2-MCMC         95%-Par#2-Unc-Range   Par#3-MCMC         95%-Par#3-Unc-Range
+         Gaussian    0.1822    0.9647               0.9355          NaN          NaN               0.9999         [  0.8014   0.9983]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+                t    0.1822    0.9647               0.9363      14.6158          NaN               0.9999         [  0.8115   0.9982]       6.3488         [  1.4042  34.2665]          NaN         [     NaN      NaN] 
+          Clayton    0.1757    0.9672               2.8171          NaN          NaN              10.6794         [  5.3783  34.3275]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+            Frank    0.1827    0.9645              16.7682          NaN          NaN              34.9784         [ 11.8579  34.5854]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+           Gumbel    0.1823    0.9646               4.6524          NaN          NaN              35.0000         [  5.7592  34.4972]          NaN         [     NaN      NaN]          NaN         [     NaN      NaN] 
+
+ 
+WARNING(s) 
+Second parameter of t copula is degree of freedom 
+One (of the) parameter(s) of          Gaussian copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of                 t copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of             Frank copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
+One (of the) parameter(s) of            Gumbel copula is converging to the parameter boundary(s). There is a chance that this is not a good fit! 
